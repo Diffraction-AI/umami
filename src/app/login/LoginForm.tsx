@@ -7,6 +7,7 @@ import {
   Heading,
   Icon,
   PasswordField,
+  Text,
   TextField,
 } from '@umami/react-zen';
 import { useRouter } from 'next/navigation';
@@ -42,6 +43,7 @@ export function LoginForm() {
         <Logo />
       </Icon>
       <Heading>umami</Heading>
+      <Text color="muted">Sign in to view your website analytics.</Text>
       <Form
         onSubmit={handleSubmit}
         error={getErrorMessage(error)}
