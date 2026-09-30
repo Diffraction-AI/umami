@@ -1,0 +1,20 @@
+{
+  "$schema": "https://app.diffraction.sh/schemas/diffraction.schema.json",
+  "version": 1,
+  "app": {
+    "network": { "installationAllowedHosts": ["raw.githubusercontent.com"] }
+  },
+  "review": {
+    "importantRoutes": ["/websites"],
+    "signIn": {
+      "kind": "form",
+      "route": "/login",
+      "fields": [
+        { "label": "Username", "secret": "UMAMI_REVIEW_USERNAME" },
+        { "label": "Password", "secret": "UMAMI_REVIEW_PASSWORD" }
+      ],
+      "submit": "Login"
+    }
+  },
+  "secrets": { "references": ["UMAMI_REVIEW_USERNAME", "UMAMI_REVIEW_PASSWORD"] }
+}
