@@ -50,11 +50,11 @@ export function ChangeLabel({
       gap="2"
     >
       {!neutral && (
-        <Icon rotate={positive ? -90 : 90} size={size}>
+        <Icon rotate={negative ? -90 : 90} size={size}>
           <ArrowRight />
         </Icon>
       )}
-      <Text>{children || value}</Text>
+      <Text wrap="nowrap">{children || value}</Text>
     </Row>
   );
 }
